@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344AA06A208BAE5A00972937 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344AA060208BAE5A00972937 /* Crypto.framework */; };
+		344AA06F208BAE5A00972937 /* CryptoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344AA06E208BAE5A00972937 /* CryptoTests.m */; };
+		344AA071208BAE5A00972937 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA063208BAE5A00972937 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		344AA08E208BAEAD00972937 /* oaes_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA07A208BAEAB00972937 /* oaes_config.h */; };
+		344AA08F208BAEAD00972937 /* aesb.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA07B208BAEAB00972937 /* aesb.h */; };
+		344AA090208BAEAD00972937 /* oaes_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 344AA07C208BAEAB00972937 /* oaes_lib.c */; };
+		344AA091208BAEAD00972937 /* groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 344AA07D208BAEAB00972937 /* groestl.c */; };
+		344AA092208BAEAD00972937 /* cryptonight.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA07E208BAEAB00972937 /* cryptonight.h */; };
+		344AA093208BAEAD00972937 /* blake.c in Sources */ = {isa = PBXBuildFile; fileRef = 344AA07F208BAEAB00972937 /* blake.c */; };
+		344AA094208BAEAD00972937 /* aesb.c in Sources */ = {isa = PBXBuildFile; fileRef = 344AA080208BAEAB00972937 /* aesb.c */; };
+		344AA095208BAEAD00972937 /* cryptonight.c in Sources */ = {isa = PBXBuildFile; fileRef = 344AA081208BAEAB00972937 /* cryptonight.c */; };
+		344AA096208BAEAD00972937 /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 344AA082208BAEAC00972937 /* keccak.c */; };
+		344AA097208BAEAD00972937 /* blake.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA083208BAEAC00972937 /* blake.h */; };
+		344AA098208BAEAD00972937 /* skein_port.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA084208BAEAC00972937 /* skein_port.h */; };
+		344AA099208BAEAD00972937 /* jh.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA086208BAEAC00972937 /* jh.h */; };
+		344AA09A208BAEAD00972937 /* jh_ansi_opt64.c in Sources */ = {isa = PBXBuildFile; fileRef = 344AA087208BAEAC00972937 /* jh_ansi_opt64.c */; };
+		344AA09B208BAEAD00972937 /* oaes_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA088208BAEAC00972937 /* oaes_lib.h */; };
+		344AA09C208BAEAD00972937 /* keccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA089208BAEAC00972937 /* keccak.h */; };
+		344AA09D208BAEAD00972937 /* skein.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA08A208BAEAC00972937 /* skein.h */; };
+		344AA09E208BAEAD00972937 /* groestl_tables.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA08B208BAEAC00972937 /* groestl_tables.h */; };
+		344AA09F208BAEAD00972937 /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 344AA08C208BAEAC00972937 /* skein.c */; };
+		344AA0A0208BAEAD00972937 /* groestl.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA08D208BAEAD00972937 /* groestl.h */; };
+		344AA0A5208BAF8C00972937 /* HashAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 344AA0A3208BAF8C00972937 /* HashAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		344AA0A6208BAF8C00972937 /* HashAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 344AA0A4208BAF8C00972937 /* HashAES.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		344AA06B208BAE5A00972937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344AA057208BAE5A00972937 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344AA05F208BAE5A00972937;
+			remoteInfo = Crypto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344AA060208BAE5A00972937 /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		344AA063208BAE5A00972937 /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		344AA064208BAE5A00972937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344AA069208BAE5A00972937 /* CryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		344AA06E208BAE5A00972937 /* CryptoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoTests.m; sourceTree = "<group>"; };
+		344AA070208BAE5A00972937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344AA07A208BAEAB00972937 /* oaes_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oaes_config.h; sourceTree = "<group>"; };
+		344AA07B208BAEAB00972937 /* aesb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesb.h; sourceTree = "<group>"; };
+		344AA07C208BAEAB00972937 /* oaes_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oaes_lib.c; sourceTree = "<group>"; };
+		344AA07D208BAEAB00972937 /* groestl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = groestl.c; sourceTree = "<group>"; };
+		344AA07E208BAEAB00972937 /* cryptonight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cryptonight.h; sourceTree = "<group>"; };
+		344AA07F208BAEAB00972937 /* blake.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blake.c; sourceTree = "<group>"; };
+		344AA080208BAEAB00972937 /* aesb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aesb.c; sourceTree = "<group>"; };
+		344AA081208BAEAB00972937 /* cryptonight.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cryptonight.c; sourceTree = "<group>"; };
+		344AA082208BAEAC00972937 /* keccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keccak.c; sourceTree = "<group>"; };
+		344AA083208BAEAC00972937 /* blake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blake.h; sourceTree = "<group>"; };
+		344AA084208BAEAC00972937 /* skein_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skein_port.h; sourceTree = "<group>"; };
+		344AA086208BAEAC00972937 /* jh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jh.h; sourceTree = "<group>"; };
+		344AA087208BAEAC00972937 /* jh_ansi_opt64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jh_ansi_opt64.c; sourceTree = "<group>"; };
+		344AA088208BAEAC00972937 /* oaes_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oaes_lib.h; sourceTree = "<group>"; };
+		344AA089208BAEAC00972937 /* keccak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keccak.h; sourceTree = "<group>"; };
+		344AA08A208BAEAC00972937 /* skein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skein.h; sourceTree = "<group>"; };
+		344AA08B208BAEAC00972937 /* groestl_tables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groestl_tables.h; sourceTree = "<group>"; };
+		344AA08C208BAEAC00972937 /* skein.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = skein.c; sourceTree = "<group>"; };
+		344AA08D208BAEAD00972937 /* groestl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groestl.h; sourceTree = "<group>"; };
+		344AA0A3208BAF8C00972937 /* HashAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashAES.h; sourceTree = "<group>"; };
+		344AA0A4208BAF8C00972937 /* HashAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashAES.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344AA05C208BAE5A00972937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344AA066208BAE5A00972937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344AA06A208BAE5A00972937 /* Crypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344AA056208BAE5A00972937 = {
+			isa = PBXGroup;
+			children = (
+				344AA062208BAE5A00972937 /* Crypto */,
+				344AA06D208BAE5A00972937 /* CryptoTests */,
+				344AA061208BAE5A00972937 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		344AA061208BAE5A00972937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344AA060208BAE5A00972937 /* Crypto.framework */,
+				344AA069208BAE5A00972937 /* CryptoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344AA062208BAE5A00972937 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				344AA080208BAEAB00972937 /* aesb.c */,
+				344AA07B208BAEAB00972937 /* aesb.h */,
+				344AA07F208BAEAB00972937 /* blake.c */,
+				344AA083208BAEAC00972937 /* blake.h */,
+				344AA081208BAEAB00972937 /* cryptonight.c */,
+				344AA07E208BAEAB00972937 /* cryptonight.h */,
+				344AA08B208BAEAC00972937 /* groestl_tables.h */,
+				344AA07D208BAEAB00972937 /* groestl.c */,
+				344AA08D208BAEAD00972937 /* groestl.h */,
+				344AA085208BAEAC00972937 /* jh */,
+				344AA082208BAEAC00972937 /* keccak.c */,
+				344AA089208BAEAC00972937 /* keccak.h */,
+				344AA07A208BAEAB00972937 /* oaes_config.h */,
+				344AA07C208BAEAB00972937 /* oaes_lib.c */,
+				344AA088208BAEAC00972937 /* oaes_lib.h */,
+				344AA084208BAEAC00972937 /* skein_port.h */,
+				344AA08C208BAEAC00972937 /* skein.c */,
+				344AA08A208BAEAC00972937 /* skein.h */,
+				344AA063208BAE5A00972937 /* Crypto.h */,
+				344AA064208BAE5A00972937 /* Info.plist */,
+				344AA0A3208BAF8C00972937 /* HashAES.h */,
+				344AA0A4208BAF8C00972937 /* HashAES.m */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		344AA06D208BAE5A00972937 /* CryptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				344AA06E208BAE5A00972937 /* CryptoTests.m */,
+				344AA070208BAE5A00972937 /* Info.plist */,
+			);
+			path = CryptoTests;
+			sourceTree = "<group>";
+		};
+		344AA085208BAEAC00972937 /* jh */ = {
+			isa = PBXGroup;
+			children = (
+				344AA086208BAEAC00972937 /* jh.h */,
+				344AA087208BAEAC00972937 /* jh_ansi_opt64.c */,
+			);
+			path = jh;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		344AA05D208BAE5A00972937 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344AA08F208BAEAD00972937 /* aesb.h in Headers */,
+				344AA08E208BAEAD00972937 /* oaes_config.h in Headers */,
+				344AA09C208BAEAD00972937 /* keccak.h in Headers */,
+				344AA0A0208BAEAD00972937 /* groestl.h in Headers */,
+				344AA092208BAEAD00972937 /* cryptonight.h in Headers */,
+				344AA071208BAE5A00972937 /* Crypto.h in Headers */,
+				344AA099208BAEAD00972937 /* jh.h in Headers */,
+				344AA098208BAEAD00972937 /* skein_port.h in Headers */,
+				344AA09B208BAEAD00972937 /* oaes_lib.h in Headers */,
+				344AA0A5208BAF8C00972937 /* HashAES.h in Headers */,
+				344AA097208BAEAD00972937 /* blake.h in Headers */,
+				344AA09E208BAEAD00972937 /* groestl_tables.h in Headers */,
+				344AA09D208BAEAD00972937 /* skein.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		344AA05F208BAE5A00972937 /* Crypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344AA074208BAE5A00972937 /* Build configuration list for PBXNativeTarget "Crypto" */;
+			buildPhases = (
+				344AA05B208BAE5A00972937 /* Sources */,
+				344AA05C208BAE5A00972937 /* Frameworks */,
+				344AA05D208BAE5A00972937 /* Headers */,
+				344AA05E208BAE5A00972937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crypto;
+			productName = Crypto;
+			productReference = 344AA060208BAE5A00972937 /* Crypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		344AA068208BAE5A00972937 /* CryptoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344AA077208BAE5A00972937 /* Build configuration list for PBXNativeTarget "CryptoTests" */;
+			buildPhases = (
+				344AA065208BAE5A00972937 /* Sources */,
+				344AA066208BAE5A00972937 /* Frameworks */,
+				344AA067208BAE5A00972937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344AA06C208BAE5A00972937 /* PBXTargetDependency */,
+			);
+			name = CryptoTests;
+			productName = CryptoTests;
+			productReference = 344AA069208BAE5A00972937 /* CryptoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344AA057208BAE5A00972937 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Pavlo Boiko";
+				TargetAttributes = {
+					344AA05F208BAE5A00972937 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					344AA068208BAE5A00972937 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 344AA05A208BAE5A00972937 /* Build configuration list for PBXProject "Crypto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 344AA056208BAE5A00972937;
+			productRefGroup = 344AA061208BAE5A00972937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344AA05F208BAE5A00972937 /* Crypto */,
+				344AA068208BAE5A00972937 /* CryptoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344AA05E208BAE5A00972937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344AA067208BAE5A00972937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344AA05B208BAE5A00972937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344AA093208BAEAD00972937 /* blake.c in Sources */,
+				344AA09A208BAEAD00972937 /* jh_ansi_opt64.c in Sources */,
+				344AA09F208BAEAD00972937 /* skein.c in Sources */,
+				344AA096208BAEAD00972937 /* keccak.c in Sources */,
+				344AA091208BAEAD00972937 /* groestl.c in Sources */,
+				344AA095208BAEAD00972937 /* cryptonight.c in Sources */,
+				344AA0A6208BAF8C00972937 /* HashAES.m in Sources */,
+				344AA094208BAEAD00972937 /* aesb.c in Sources */,
+				344AA090208BAEAD00972937 /* oaes_lib.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344AA065208BAE5A00972937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344AA06F208BAE5A00972937 /* CryptoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		344AA06C208BAE5A00972937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344AA05F208BAE5A00972937 /* Crypto */;
+			targetProxy = 344AA06B208BAE5A00972937 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		344AA072208BAE5A00972937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		344AA073208BAE5A00972937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		344AA075208BAE5A00972937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X24R65DM8E;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Crypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Impulse.Crypto;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		344AA076208BAE5A00972937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X24R65DM8E;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Crypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Impulse.Crypto;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		344AA078208BAE5A00972937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X24R65DM8E;
+				INFOPLIST_FILE = CryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Impulse.CryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		344AA079208BAE5A00972937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X24R65DM8E;
+				INFOPLIST_FILE = CryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Impulse.CryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344AA05A208BAE5A00972937 /* Build configuration list for PBXProject "Crypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344AA072208BAE5A00972937 /* Debug */,
+				344AA073208BAE5A00972937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344AA074208BAE5A00972937 /* Build configuration list for PBXNativeTarget "Crypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344AA075208BAE5A00972937 /* Debug */,
+				344AA076208BAE5A00972937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344AA077208BAE5A00972937 /* Build configuration list for PBXNativeTarget "CryptoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344AA078208BAE5A00972937 /* Debug */,
+				344AA079208BAE5A00972937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344AA057208BAE5A00972937 /* Project object */;
+}
