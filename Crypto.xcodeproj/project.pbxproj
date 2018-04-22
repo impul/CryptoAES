@@ -39,6 +39,19 @@
 		34571F38208CD4EB007A101D /* groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 34571F27208CD4EB007A101D /* groestl.c */; };
 		34571F39208CD4EB007A101D /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 34571F28208CD4EB007A101D /* skein.c */; };
 		34571F3A208CD4EB007A101D /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 34571F28208CD4EB007A101D /* skein.c */; };
+		34571F54208CD9CD007A101D /* aesb.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F1A208CD4EB007A101D /* aesb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F55208CD9CD007A101D /* blake.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F1B208CD4EB007A101D /* blake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F56208CD9CD007A101D /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F1C208CD4EB007A101D /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F57208CD9CD007A101D /* cryptonight.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F1D208CD4EB007A101D /* cryptonight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F58208CD9CD007A101D /* groestl.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F1E208CD4EB007A101D /* groestl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F59208CD9CD007A101D /* groestl_tables.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F1F208CD4EB007A101D /* groestl_tables.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F5A208CD9CD007A101D /* HashAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F20208CD4EB007A101D /* HashAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F5B208CD9CD007A101D /* jh.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F21208CD4EB007A101D /* jh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F5C208CD9CD007A101D /* keccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F22208CD4EB007A101D /* keccak.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F5D208CD9CD007A101D /* oaes_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F23208CD4EB007A101D /* oaes_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F5E208CD9CD007A101D /* oaes_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F24208CD4EB007A101D /* oaes_lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F5F208CD9CD007A101D /* skein.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F25208CD4EB007A101D /* skein.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34571F60208CD9CD007A101D /* skein_port.h in Headers */ = {isa = PBXBuildFile; fileRef = 34571F26208CD4EB007A101D /* skein_port.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		OBJ_48 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_59 /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* CryptoTests.swift */; };
 		OBJ_60 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* XCTestManifests.swift */; };
@@ -197,6 +210,29 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		34571F53208CD9C5007A101D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34571F54208CD9CD007A101D /* aesb.h in Headers */,
+				34571F55208CD9CD007A101D /* blake.h in Headers */,
+				34571F56208CD9CD007A101D /* Crypto.h in Headers */,
+				34571F57208CD9CD007A101D /* cryptonight.h in Headers */,
+				34571F58208CD9CD007A101D /* groestl.h in Headers */,
+				34571F59208CD9CD007A101D /* groestl_tables.h in Headers */,
+				34571F5A208CD9CD007A101D /* HashAES.h in Headers */,
+				34571F5B208CD9CD007A101D /* jh.h in Headers */,
+				34571F5C208CD9CD007A101D /* keccak.h in Headers */,
+				34571F5D208CD9CD007A101D /* oaes_config.h in Headers */,
+				34571F5E208CD9CD007A101D /* oaes_lib.h in Headers */,
+				34571F5F208CD9CD007A101D /* skein.h in Headers */,
+				34571F60208CD9CD007A101D /* skein_port.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		"Crypto::Crypto" /* Crypto */ = {
 			isa = PBXNativeTarget;
@@ -204,6 +240,7 @@
 			buildPhases = (
 				OBJ_32 /* Sources */,
 				OBJ_42 /* Frameworks */,
+				34571F53208CD9C5007A101D /* Headers */,
 			);
 			buildRules = (
 			);
