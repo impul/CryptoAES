@@ -6,8 +6,8 @@
 //  Copyright © 2018 Pavlo Boiko. All rights reserved.
 //
 
-#import "HashAES.h"
-#import "cryptonight.h"
+#import "include/HashAES.h"
+#import "include/cryptonight.h"
 
 @interface HashAES()
     @property (nonatomic, readonly) struct cryptonight_ctx *ctx;

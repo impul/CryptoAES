@@ -48,8 +48,8 @@
 #include <unistd.h>
 #endif
 
-#include "oaes_config.h"
-#include "oaes_lib.h"
+#include "include/oaes_config.h"
+#include "include/oaes_lib.h"
 
 #ifdef OAES_HAVE_ISAAC
 #include "rand.h"
