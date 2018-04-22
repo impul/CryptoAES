@@ -6,7 +6,6 @@
 //  Copyright © 2018 Pavlo Boiko. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "HashAES.h"
 
 //! Project version number for Crypto.
